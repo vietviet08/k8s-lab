@@ -25,6 +25,9 @@ data:
     okta.oauth2.client-id=0oab0lzwjoN1Rjsar5d7
     okta.oauth2.issuer=https://dev-82108115.okta.com/oauth2/default
 ---
+# Volume trong Deployment file
+
+
 # Tạo volumes ở trong spec
 volumes:
         - configMap:
