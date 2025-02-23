@@ -27,16 +27,15 @@ data:
 ---
 # Volume trong Deployment file
 
-
 # Tạo volumes ở trong spec
 volumes:
-        - configMap:
-            defaultMode: 420
-            name: ecommerce-backend-application-properties-configmap
-          name: ecommerce-backend-application-properties-config-volume
+  - configMap:
+      defaultMode: 420
+      name: ecommerce-backend-application-properties-configmap
+    name: ecommerce-backend-application-properties-config-volume
 ---
-# Mount volume vào trong docker container 
+# Mount volume vào trong docker container
 volumeMounts:
-            - mountPath: /run/src/main/resources/application.properties
-              name: ecommerce-backend-application-properties-config-volume
-              subPath: application.properties
+  - mountPath: /run/src/main/resources/application.properties
+    name: ecommerce-backend-application-properties-config-volume
+    subPath: application.properties
