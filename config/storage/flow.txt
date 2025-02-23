@@ -1,6 +1,6 @@
-create storage class to define type storage
-install type storage in server storage(eg: install nfs in server storage)
-install common nfs in all node when use nfs server
-create pv 
-create pvc
-mount pod to pvc to storage
+step 1: create storage class to define type storage
+step 2: install type storage in server storage(eg: install nfs in server storage)
+step 3: install common nfs in all node when use nfs server
+step 4: create pv 
+step 5: create pvc
+step 6: mount pod to pvc to storage
