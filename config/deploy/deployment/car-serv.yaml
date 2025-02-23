@@ -23,7 +23,7 @@ spec:
       namespace: car-serv
     spec:
       containers:
-        #- image: elroydevops/car-serv
+        - image: vietquoc2408/car-serv
         - image: nginx
           imagePullPolicy: Always
           name: car-serv
